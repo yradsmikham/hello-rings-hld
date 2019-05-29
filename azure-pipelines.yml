@@ -50,3 +50,8 @@ steps:
     echo "GIT PUSH"
     git_push
   displayName: Fab Add HLD
+  env:
+    ACCESS_TOKEN_SECRET: $(ACCESS_TOKEN_SECRET)
+    COMMIT_MESSAGE: $(Build.SourceVersionMessage)
+    REPO: $(MANIFEST_REPO)
+    BRANCH_NAME: $(Build.SourceBranchName)
