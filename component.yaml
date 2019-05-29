@@ -1,3 +1,9 @@
 name: hello-rings
-generator: "helm"
-path: "./hello-rings-chart"
+generator: helm
+path: ./hello-rings-chart
+subcomponents:
+- name: rings
+  generator: component
+  method: git
+  path: ./rings
+  branch: master
