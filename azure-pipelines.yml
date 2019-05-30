@@ -46,7 +46,7 @@ steps:
     git config user.name "Automated Account"
 
     echo "GIT COMMIT"
-    git commit -m "$COMMIT_MESSAGE"
+    git commit -m "$COMMIT_MESSAGE" --allow-empty
 
     echo "GIT PUSH"
     git_push
