@@ -32,6 +32,7 @@ steps:
     # Clone HLD repo
     git_connect
 
+    rm -rf component.yaml
     fab add hello-rings --source https://github.com/bnookala/hello-rings-hld
 
     echo "GIT STATUS"
