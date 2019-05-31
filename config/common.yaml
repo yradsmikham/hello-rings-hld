@@ -16,3 +16,8 @@ subcomponents:
           image:
             repository: hellorings.azurecr.io/hellorings
             tag: master-3713
+  hello-rings-master:
+    config:
+      image:
+        repository: hellorings.azurecr.io/hellorings
+        tag: hello-rings-master-3717
