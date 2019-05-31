@@ -4,3 +4,10 @@ subcomponents:
       image:
         repository: hellorings.azurecr.io/hellorings
         tag: featureA-3709
+  hello-rings-$(Build:
+    subcomponents:
+      SourceBranchName):
+        config:
+          image:
+            repository: hellorings.azurecr.io/hellorings
+            tag: featureA-3712
