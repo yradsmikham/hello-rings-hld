@@ -4,18 +4,6 @@ subcomponents:
       image:
         repository: hellorings.azurecr.io/hellorings
         tag: featureA-3709
-  hello-rings-:
-    config:
-      image:
-        repository: hellorings.azurecr.io/hellorings
-        tag: master-3713
-  hello-rings-$(Build:
-    subcomponents:
-      SourceBranchName):
-        config:
-          image:
-            repository: hellorings.azurecr.io/hellorings
-            tag: master-3713
   hello-rings-master:
     config:
       image:
