@@ -16,43 +16,21 @@ steps:
   env:
     BEDROCK_BUILD_SCRIPT: https://raw.githubusercontent.com/Microsoft/bedrock/master/gitops/azure-devops/build.sh
 
-- bash: |
-    . build.sh --source-only
-
-    # Initialization
-    verify_access_token
-    init
-    helm init
-    get_os
-
-    # Fabrikate
-    get_fab_version
-    download_fab
-
-    # Clone HLD repo
-    git_connect
-
-    rm -rf component.yaml
-    fab add hello-rings --source https://github.com/bnookala/hello-rings-hld
-
-    echo "GIT STATUS"
-    git status
-
-    echo "GIT ADD"
-    git add -A
-
-    # Set git identity
-    git config user.email "admin@azuredevops.com"
-    git config user.name "Automated Account"
-
-    echo "GIT COMMIT"
-    git commit -m "$COMMIT_MESSAGE" --allow-empty
-
-    echo "GIT PUSH"
-    git_push
-  displayName: Fab Add HLD
+- task: ShellScript@2
+  displayName: Validate fabrikate definitions
+  inputs:
+    scriptPath: build.sh
+  condition: eq(variables['Build.Reason'], 'PullRequest')
   env:
-    ACCESS_TOKEN_SECRET: $(ACCESS_TOKEN_SECRET)
+    VERIFY_ONLY: 1
+
+- task: ShellScript@2
+  displayName: Transform fabrikate definitions and publish to YAML manifests to repo
+  inputs:
+    scriptPath: build.sh
+  condition: ne(variables['Build.Reason'], 'PullRequest')
+  env:
+    ACCESS_TOKEN_SECRET: $(ACCESS_TOKEN)
     COMMIT_MESSAGE: $(Build.SourceVersionMessage)
     REPO: $(MANIFEST_REPO)
     BRANCH_NAME: $(Build.SourceBranchName)
