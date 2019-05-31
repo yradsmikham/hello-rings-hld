@@ -1,6 +1,6 @@
 name: "hello-rings"
 subcomponents:
-  - name: "hello-rings"
+  - name: "hello-rings-master"
     generator: "helm"
     source: "https://github.com/bnookala/hello-rings"
     method: "git"
