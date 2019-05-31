@@ -1,4 +1,9 @@
 subcomponents:
+  featureA:
+    config:
+      image:
+        repository: hellorings.azurecr.io/hellorings
+        tag: featureA-3719
   hello-rings-master:
     config:
       image:
