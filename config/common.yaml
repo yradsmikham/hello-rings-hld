@@ -10,4 +10,4 @@ subcomponents:
         config:
           image:
             repository: hellorings.azurecr.io/hellorings
-            tag: featureA-3712
+            tag: master-3713
