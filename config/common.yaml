@@ -3,4 +3,4 @@ subcomponents:
     config:
       image:
         repository: hellorings.azurecr.io/hellorings
-        tag: featureA-3702
+        tag: featureA-3709
