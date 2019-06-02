@@ -1,14 +1,20 @@
-name: "hello-rings"
+name: hello-rings
 subcomponents:
-  - name: "hello-rings-master"
-    generator: "helm"
-    source: "https://github.com/bnookala/hello-rings"
-    method: "git"
-    branch: "master"
-    path: "chart"
-  - name: "hello-rings-featureA"
-    generator: "helm"
-    source: "https://github.com/bnookala/hello-rings"
-    method: "git"
-    branch: "featureA"
-    path: "chart"
+- name: hello-rings-master
+  generator: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: master
+- name: hello-rings-featureA
+  generator: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: featureA
+- name: hello-rings-featureB
+  generator: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: featureB
