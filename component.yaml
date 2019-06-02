@@ -18,9 +18,3 @@ subcomponents:
   method: git
   path: chart
   branch: featureB
-- name: hello-rings-featureC
-  generator: helm
-  source: https://github.com/bnookala/hello-rings
-  method: git
-  path: chart
-  branch: featureC
