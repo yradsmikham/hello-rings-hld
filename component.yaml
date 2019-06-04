@@ -2,13 +2,13 @@ name: hello-rings
 type: component
 subcomponents:
 - name: hello-rings-featureA
-  generator: helm
+  type: helm
   source: https://github.com/bnookala/hello-rings
   method: git
   path: chart
   branch: featureA
 - name: hello-rings-featureB
-  generator: helm
+  type: helm
   source: https://github.com/bnookala/hello-rings
   method: git
   path: chart
