@@ -1,7 +1,8 @@
 name: hello-rings
+type: component
 subcomponents:
 - name: hello-rings-master
-  generator: helm
+  type: helm
   source: https://github.com/bnookala/hello-rings
   method: git
   path: chart
