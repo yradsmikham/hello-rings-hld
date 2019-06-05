@@ -7,3 +7,9 @@ subcomponents:
   method: git
   path: chart
   branch: master
+- name: hello-rings-featureb
+  type: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: featureb
