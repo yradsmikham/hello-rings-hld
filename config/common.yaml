@@ -1,9 +1,4 @@
 subcomponents:
-  hello-rings-feature-b:
-    config:
-      image:
-        repository: hellorings.azurecr.io/hellorings
-        tag: hello-rings-feature-b-3850
   hello-rings-master:
     config:
       image:
