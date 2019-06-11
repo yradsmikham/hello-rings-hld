@@ -130,9 +130,9 @@ function fab_generate() {
     # In the case that all components are removed from the source hld,
     # generated folder should still not be empty
     if find "generated" -mindepth 1 -print -quit 2>/dev/null | grep -q .; then
-        echo "Manifest files have been generated."
+        echo "Manifest files have been generated in `pwd`."
     else
-        echo "Manifest files could not be generated, quitting..."
+        echo "Manifest files could not be generated in `pwd`, quitting..."
         exit 1
     fi
 }
