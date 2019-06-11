@@ -176,8 +176,7 @@ function git_commit() {
     ls
     echo "pwd"
     pwd
-    echo "I need to copy files from $manifest_files_location/generated/*"
-    cp -r "$HOME/generated/"* .
+    cp -r "$manifest_files_location/generated/"* .
     echo "GIT ADD"
     git add -A
 
