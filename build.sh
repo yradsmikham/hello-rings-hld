@@ -171,11 +171,7 @@ function git_commit() {
     echo "GIT REMOVE"
     rm -rf ./*/
     git rm -rf ./*/
-    echo "COPY YAML FILES TO REPO DIRECTORY..."
-    echo "ls"
-    ls
-    echo "pwd"
-    pwd
+    echo "COPY YAML FILES FROM $manifest_files_location/generated/ TO REPO DIRECTORY..."
     cp -r "$manifest_files_location/generated/"* .
     echo "GIT ADD"
     git add -A
