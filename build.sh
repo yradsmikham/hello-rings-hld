@@ -130,6 +130,7 @@ function fab_generate() {
     # In the case that all components are removed from the source hld,
     # generated folder should still not be empty
     if find "generated" -mindepth 1 -print -quit 2>/dev/null | grep -q .; then
+        export manifest_files_location=$(pwd)
         echo "Manifest files have been generated in `pwd`."
     else
         echo "Manifest files could not be generated in `pwd`, quitting..."
@@ -175,6 +176,7 @@ function git_commit() {
     ls
     echo "pwd"
     pwd
+    echo "I need to copy files from $manifest_files_location/generated/*"
     cp -r "$HOME/generated/"* .
     echo "GIT ADD"
     git add -A
