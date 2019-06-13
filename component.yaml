@@ -31,3 +31,9 @@ subcomponents:
   method: git
   path: chart
   branch: featureb
+- name: hello-rings-featuree
+  type: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: featuree
