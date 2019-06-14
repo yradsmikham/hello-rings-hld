@@ -1,6 +1,12 @@
 name: hello-rings
 type: component
 subcomponents:
+- name: hello-rings-featuref
+  type: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: featuref
 - name: hello-rings-featurea
   type: helm
   source: https://github.com/bnookala/hello-rings
