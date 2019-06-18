@@ -23,7 +23,7 @@ subcomponents:
     config:
       image:
         repository: hellorings.azurecr.io/hellorings
-        tag: hello-rings-featuree-4082
+        tag: hello-rings-featuree-4161
   hello-rings-featuref:
     config:
       image:
