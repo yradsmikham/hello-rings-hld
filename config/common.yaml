@@ -1,4 +1,9 @@
 subcomponents:
+  gc-hello-rings-master:
+    config:
+      image:
+        repository: hellorings.azurecr.io/hellorings
+        tag: gc-hello-rings-master-433
   hello-rings-featurea:
     config:
       image:
