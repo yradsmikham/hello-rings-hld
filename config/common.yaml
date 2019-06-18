@@ -33,4 +33,4 @@ subcomponents:
     config:
       image:
         repository: hellorings.azurecr.io/hellorings
-        tag: hello-rings-master-4146
+        tag: hello-rings-master-4153
