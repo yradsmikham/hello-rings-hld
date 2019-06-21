@@ -37,12 +37,6 @@ subcomponents:
   method: git
   path: chart
   branch: featuree
-- name: hello-rings-featuref
-  type: helm
-  source: https://github.com/bnookala/hello-rings
-  method: git
-  path: chart
-  branch: featuref
 - name: hello-rings-master
   type: helm
   source: https://github.com/bnookala/hello-rings
