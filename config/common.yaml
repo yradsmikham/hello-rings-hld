@@ -1,9 +1,4 @@
 subcomponents:
-  gc-hello-rings-featured:
-    config:
-      image:
-        repository: hellorings.azurecr.io/hellorings
-        tag: gc-hello-rings-featured-560
   gc-hello-rings-master:
     config:
       image:
@@ -24,21 +19,6 @@ subcomponents:
       image:
         repository: hellorings.azurecr.io/hellorings
         tag: hello-rings-featurec-4159
-  hello-rings-featured:
-    config:
-      image:
-        repository: hellorings.azurecr.io/hellorings
-        tag: hello-rings-featured-4160
-  hello-rings-featuree:
-    config:
-      image:
-        repository: hellorings.azurecr.io/hellorings
-        tag: hello-rings-featuree-4161
-  hello-rings-featuref:
-    config:
-      image:
-        repository: hellorings.azurecr.io/hellorings
-        tag: hello-rings-featuref-4093
   hello-rings-master:
     config:
       image:
