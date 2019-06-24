@@ -8,7 +8,7 @@ subcomponents:
     config:
       image:
         repository: hellorings.azurecr.io/hellorings
-        tag: gc-hello-rings-master-516
+        tag: gc-hello-rings-master-546
   hello-rings-featurea:
     config:
       image:
